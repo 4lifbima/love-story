@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" href="https://bcsites.vercel.app/images/arts/1.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story ❤️</title>
+    <meta name="description" content="Sebuah halaman web yang merayakan kisah cinta kita dengan desain yang indah dan interaktif.">
+    <meta name="keywords" content="cinta, kisah cinta, hubungan, kenangan, pesan cinta, galeri foto, penghitung cinta">
+    <meta name="author" content="Alif Bima Pradana & Chika Frilya Subanomo">   
+
+    <!-- Meta Facebook -->
+    <meta property="og:title" content="Our Love Story ❤️">
+    <meta property="og:description" content="Sebuah halaman web yang merayakan kisah cinta kita dengan desain yang indah dan interaktif.">
+    <meta property="og:image" content="https://bcsites.vercel.app/images/arts/1.png">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-poppins">
+    <!-- Mobile Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-50 md:hidden">
+        <div class="flex justify-around items-center py-2">
+            <button onclick="scrollToSection('hero')" class="flex flex-col items-center p-2 text-purple-600">
+                <div class="text-xl">🏠</div>
+                <span class="text-xs">Home</span>
+            </button>
+            <button onclick="scrollToSection('story')" class="flex flex-col items-center p-2 text-purple-600">
+                <div class="text-xl">💕</div>
+                <span class="text-xs">Story</span>
+            </button>
+            <button onclick="scrollToSection('memories')" class="flex flex-col items-center p-2 text-purple-600">
+                <div class="text-xl">📸</div>
+                <span class="text-xs">Memories</span>
+            </button>
+            <button onclick="scrollToSection('counter')" class="flex flex-col items-center p-2 text-purple-600">
+                <div class="text-xl">⏰</div>
+                <span class="text-xs">Counter</span>
+            </button>
+            <button onclick="scrollToSection('messages')" class="flex flex-col items-center p-2 text-purple-600">
+                <div class="text-xl">💌</div>
+                <span class="text-xs">Messages</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Floating Hearts Background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="heart-float absolute top-20 left-10 text-pink-200 text-2xl">💕</div>
+            <div class="heart-float absolute top-40 right-20 text-pink-300 text-xl" style="animation-delay: 1s;">💖</div>
+            <div class="heart-float absolute bottom-32 left-1/4 text-pink-200 text-lg" style="animation-delay: 2s;">💗</div>
+            <div class="heart-float absolute top-60 right-1/3 text-pink-300 text-2xl" style="animation-delay: 0.5s;">💝</div>
+            <div class="heart-float absolute bottom-20 right-10 text-pink-200 text-xl" style="animation-delay: 1.5s;">💞</div>
+        </div>
+        
+        <div class="text-center text-white z-10 px-4">
+            <h1 class="font-dancing text-6xl md:text-8xl font-bold mb-4 sparkle">Our Love Story</h1>
+            <p class="text-xl md:text-2xl font-light mb-8">Kisah Cinta Kita yang Indah</p>
+            <div class="text-6xl mb-6">💕</div>
+            <button onclick="scrollToSection('story')" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Mulai Cerita Kita
+            </button>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="story" class="py-20 bg-gradient-to-br from-pink-300 to-purple-100">
+        <div class="container mx-auto px-4">
+            <h2 class="font-dancing text-5xl md:text-6xl text-center text-purple-800 mb-16">Tentang Kita</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <!-- Profile Cards -->
+                <div class="space-y-8">
+                    <div class="love-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="text-6xl mb-4">👨</div>
+                        <h3 class="font-dancing text-3xl text-purple-700 mb-2">Alif Bima Pradana</h3>
+                        <p class="text-gray-600">Pria yang mencintai dengan sepenuh hati</p>
+                    </div>
+                    
+                    <div class="love-card rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="text-6xl mb-4">👩</div>
+                        <h3 class="font-dancing text-3xl text-purple-700 mb-2">Chika Frilya Subanomo</h3>
+                        <p class="text-gray-600">Wanita yang menjadi inspirasi hidup</p>
+                    </div>
+                </div>
+                
+                <!-- Love Story Text -->
+                <div class="love-card rounded-2xl p-8">
+                <h3 class="font-dancing text-4xl text-purple-700 mb-6 text-center">Cerita Cinta Kita</h3>
+                <div class="space-y-4 text-gray-700">
+                    <p>💫 <strong>Pertemuan Pertama:</strong> Hari dimana takdir mempertemukan kita, aku tahu hidupku akan berubah selamanya...</p>
+                    <p>💕 <strong>Momen Spesial:</strong> Saat pertama kali aku sadar, kamu adalah jawaban dari doa-doaku yang paling tulus...</p>
+                    <p>💖 <strong>Komitmen:</strong> Janji untuk selalu bersama dalam suka dan duka, menjaga hati ini hanya untukmu...</p>
+                    <p>💗 <strong>Masa Depan:</strong> Mimpi-mimpi indah yang akan kita wujudkan bersama, menggandeng tanganmu menuju hari esok...</p>
+                    <p>🌸 <strong>Kebersamaan:</strong> Setiap tawa, setiap tangis, semua terasa berharga karena ada kamu di sisiku...</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Gallery -->
+    <section id="memories" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-dancing text-5xl md:text-6xl text-center text-purple-800 mb-16">Kenangan Indah</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="love-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300">
+                    <div class="text-6xl mb-4">📸</div>
+                    <h3 class="font-dancing text-2xl text-purple-700 mb-2">Foto Pertama</h3>
+                    <p class="text-gray-600">Momen berharga yang tak terlupakan</p>
+                </div>
+                
+                <div class="love-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300">
+                    <div class="text-6xl mb-4">🌹</div>
+                    <h3 class="font-dancing text-2xl text-purple-700 mb-2">Kencan Pertama</h3>
+                    <p class="text-gray-600">Hari yang mengubah segalanya</p>
+                </div>
+                
+                <div class="love-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300">
+                    <div class="text-6xl mb-4">💍</div>
+                    <h3 class="font-dancing text-2xl text-purple-700 mb-2">Janji Suci</h3>
+                    <p class="text-gray-600">Komitmen untuk selamanya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Counter -->
+    <section id="counter" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-dancing text-5xl md:text-6xl mb-12">Sudah Bersama Selama</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="love-card rounded-2xl p-6">
+                    <div class="text-4xl font-bold mb-2" id="days">0</div>
+                    <div class="text-lg">Hari</div>
+                </div>
+                <div class="love-card rounded-2xl p-6">
+                    <div class="text-4xl font-bold mb-2" id="hours">0</div>
+                    <div class="text-lg">Jam</div>
+                </div>
+                <div class="love-card rounded-2xl p-6">
+                    <div class="text-4xl font-bold mb-2" id="minutes">0</div>
+                    <div class="text-lg">Menit</div>
+                </div>
+                <div class="love-card rounded-2xl p-6">
+                    <div class="text-4xl font-bold mb-2" id="seconds">0</div>
+                    <div class="text-lg">Detik</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Messages -->
+    <section id="messages" class="py-20 bg-gradient-to-br from-pink-50 to-purple-50 pb-24 md:pb-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-dancing text-5xl md:text-6xl text-center text-purple-800 mb-16">Pesan Cinta</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="love-card rounded-2xl p-8 mb-8">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl mb-4">💌</div>
+                        <h3 class="font-dancing text-3xl text-purple-700">Untuk Kekasih Hatiku</h3>
+                    </div>
+                    <div class="text-center">
+                        <input 
+                            type="text"
+                            class="w-full p-4 rounded-lg border-2 border-pink-200 focus:border-pink-400 focus:outline-none mb-4"
+                            placeholder="Nama Anda..."
+                            id="senderName"
+                        />
+                        <textarea 
+                            class="w-full p-4 rounded-lg border-2 border-pink-200 focus:border-pink-400 focus:outline-none resize-none"
+                            rows="4"
+                            placeholder="Tulis pesan cinta untuk pasanganmu di sini..."
+                            id="loveMessage"
+                        ></textarea>
+                        <button 
+                            onclick="saveLoveMessage()"
+                            class="mt-4 bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full transition-all duration-300 disabled:opacity-50"
+                            id="submitBtn"
+                        >
+                            Kirim Pesan ❤️
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Messages Display Area -->
+                <div id="messagesContainer" class="space-y-4">
+                    <!-- Messages will be loaded here -->
+                </div>
+                
+                <div id="loadingMessage" class="text-center py-8 hidden">
+                    <div class="text-4xl mb-4">💕</div>
+                    <p class="text-lg text-purple-600">Mengirim pesan cinta...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-4xl mb-4">💕</div>
+            <h3 class="font-dancing text-3xl mb-4">Cinta Kita Abadi</h3>
+            <p class="text-lg opacity-90">Dibuat dengan ❤️ untuk kisah cinta yang tak berujung</p>
+            <div class="mt-8 text-sm opacity-75">
+                © 2024 Our Love Story - Forever & Always
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

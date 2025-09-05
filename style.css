@@ -1,0 +1,58 @@
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        .font-dancing { font-family: 'Dancing Script', cursive; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .heart-float {
+            animation: heartFloat 3s ease-in-out infinite;
+        }
+        
+        @keyframes heartFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .love-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .sparkle {
+            animation: sparkle 2s linear infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+                /* Glassmorphism untuk popup modal */
+        .welcome-modal {
+        background: rgba(255, 255, 255, 0.368) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(15px) saturate(180%) !important;
+        border-radius: 20px !important;
+        border: 3px solid rgba(255, 255, 255, 0.3) !important;
+        box-shadow: 0 8px 32px 0 rgba(30, 40, 185, 0.2) !important;
+        }
+
+        /* Tombol biru */
+        .welcome-button {
+        background-color: #2563eb !important; /* Biru Tailwind (blue-600) */
+        color: #fff !important;
+        font-weight: 600 !important;
+        padding: 10px 20px !important;
+        border-radius: 9999px !important;
+        transition: all 0.3s ease-in-out !important;
+        border: none !important;
+        }
+
+        .welcome-button:hover {
+        background-color: #1d4ed8 !important; /* Biru lebih gelap (blue-700) */
+        transform: scale(1.05);
+        }
