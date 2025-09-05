@@ -1,6 +1,6 @@
 # 💕 Our Love Story
 
-    Sebuah halaman web interaktif yang merayakan kisah cinta antara Pria & Wanita — dibuat dengan cinta, Tailwind CSS, dan harapan abadi.
+Sebuah halaman web interaktif yang merayakan kisah cinta antara Pria & Wanita — dibuat dengan cinta, Tailwind CSS, dan harapan abadi.
 
 ## 🌟 Fitur Utama
 
