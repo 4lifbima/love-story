@@ -1,44 +1,44 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     Swal.fire({
-//         title: '<h1 class="font-dancing" style="font-size: 2.5rem; color: #7e22ce;">Selamat Datang di Kisah Cinta Kita</h1>',
-//         html: `
-//             <div style="text-align: center;">
-//                 <div class="welcome-heart">💖</div>
-//                 <p class="text-white" style="font-size: 1.1rem; margin-bottom: 1rem;">Setiap detik bersamamu adalah anugerah terindah</p>
-//                 <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-//                     <div style="animation-delay: 0.2s;" class="heart-float text-3xl">💕</div>
-//                     <div style="animation-delay: 0.4s;" class="heart-float text-3xl">💗</div>
-//                     <div style="animation-delay: 0.6s;" class="heart-float text-3xl">💖</div>
-//                 </div>
-//             </div>
-//         `,
-//         width: '80%',
-//         padding: '2rem',
-//         background: 'transparent', // biar glass effect dari CSS yang ambil alih
-//         backdrop: `
-//             rgba(255,192,203,0.4)
-//             url("/images/nyan-cat.gif")
-//             center top
-//             no-repeat
-//         `,
-//         customClass: {
-//             popup: 'welcome-modal',
-//             confirmButton: 'welcome-button'
-//         },
-//         showConfirmButton: true,
-//         confirmButtonText: 'Mulai Cerita Kita ❤️',
-//         buttonsStyling: false,
-//         allowOutsideClick: false,
-//         allowEscapeKey: false,
-//         allowEnterKey: true,
-//         showClass: {
-//             popup: 'animate__animated animate__fadeInDown'
-//         },
-//         hideClass: {
-//             popup: 'animate__animated animate__fadeOutUp'
-//         }
-//     });
-// });
+document.addEventListener('DOMContentLoaded', function() {
+    Swal.fire({
+        title: '<h1 class="font-dancing" style="font-size: 2.5rem; color: #7e22ce;">Selamat Datang di Kisah Cinta Kita</h1>',
+        html: `
+            <div style="text-align: center;">
+                <div class="welcome-heart">💖</div>
+                <p class="text-white" style="font-size: 1.1rem; margin-bottom: 1rem;">Setiap detik bersamamu adalah anugerah terindah</p>
+                <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+                    <div style="animation-delay: 0.2s;" class="heart-float text-3xl">💕</div>
+                    <div style="animation-delay: 0.4s;" class="heart-float text-3xl">💗</div>
+                    <div style="animation-delay: 0.6s;" class="heart-float text-3xl">💖</div>
+                </div>
+            </div>
+        `,
+        width: '80%',
+        padding: '2rem',
+        background: 'transparent', // biar glass effect dari CSS yang ambil alih
+        backdrop: `
+            rgba(255,192,203,0.4)
+            url("/images/nyan-cat.gif")
+            center top
+            no-repeat
+        `,
+        customClass: {
+            popup: 'welcome-modal',
+            confirmButton: 'welcome-button'
+        },
+        showConfirmButton: true,
+        confirmButtonText: 'Mulai Cerita Kita ❤️',
+        buttonsStyling: false,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: true,
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        }
+    });
+});
 
         // Smooth scrolling function
         function scrollToSection(sectionId) {
