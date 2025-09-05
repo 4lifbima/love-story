@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Render item
         allMemories.forEach(mem => {
             const div = document.createElement("div");
-            div.className = "memory-item love-card rounded-2xl overflow-hidden w-64 h-64 flex-shrink-0 relative group cursor-pointer";
+            div.className = "memory-item love-card rounded-xl overflow-hidden w-64 h-64 flex-shrink-0 relative group cursor-pointer";
             div.innerHTML = `
             <img src="${mem.src}" alt="${mem.title}" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
